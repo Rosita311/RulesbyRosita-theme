@@ -7,6 +7,22 @@ function rules_by_rosita_customize_register($wp_customize)
         'priority' => 30,
     ));
 
+    // Custom colors setting
+$wp_customize->add_setting('rules_by_rosita_primary_color', array(
+    'default'           => '#d7233e',
+    'sanitize_callback' => 'sanitize_hex_color',
+));
+
+$wp_customize->add_control(
+    new WP_Customize_Color_Control(
+        $wp_customize,
+        'rules_by_rosita_primary_color',
+        array(
+            'label'   => __('Primaire kleur', 'rules-by-rosita'),
+            'section' => 'theme_settings',
+        )
+    )
+);
     // Dark mode toggle
      $wp_customize->add_setting('rules_by_rosita_darkmode', array(
         'default'           => true,
