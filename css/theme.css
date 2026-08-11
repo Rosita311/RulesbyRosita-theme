@@ -185,10 +185,7 @@ a:hover {
   text-decoration: none;
 }
 
-:root :where(a:where(:not(.wp-element-button)):hover) {
-  color: var(--color-primary);
-  text-decoration: none;
-}
+
 
 /* Links op gekleurde achtergronden krijgen de tekstkleur voor voldoende contrast */
 .has-primary-background-color a,
