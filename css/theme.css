@@ -747,6 +747,7 @@ a.btn__icon--large {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   &:hover {
     background-color: var(--color-menu-button-hover);
